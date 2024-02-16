@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+@model Catalogue
+    <div id="adobe-pdf-view" height="90%"></div>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script>
+        document.addEventListener("adobe_dc_view_sdk.ready", function () {
+            var adobeDCView = new AdobeDC.View({ clientId: "9bafd8c58d5745ecb3755643329f3900", divId: "adobe-pdf-view" });
+            adobeDCView.previewFile({
+                content: { location: { url: "@Model.PdfUrl" } },
+                metaData: { fileName: "Dauti Komerc - Catalogue" }
+            }, {
+                embedMode: "SIZED_CONTAINER",
+                defaultViewMode: "FIT_PAGE",
+                showDownloadPDF: true,
+                showPrintPDF: true,
+                showAnnotationTools: false,
+                showLeftHandPanel: true,
+                showPagingControls: true,
+                openThumbnailsPanel: false,
+                showZoomButtons: true,
+                showFitPageControls: true
+            });
+        });
+    </script>

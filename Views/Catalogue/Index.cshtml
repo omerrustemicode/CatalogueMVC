@@ -1,0 +1,17 @@
+﻿@model List<Catalogue>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catalogues</title>
+</head>
+<body>
+    <h1>List of Catalogues</h1>
+    <ul>
+        @foreach (var catalogue in Model)
+        {
+            <li><a href="@Url.Action("ViewPdf", "Catalogue", new { pdfUrl = catalogue.PdfUrl })">@catalogue.Name</a></li>
+        }
+    </ul>
+</body>
+</html>

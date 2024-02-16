@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Catalogue 1",
+    "PdfUrl": "/PDFs/pdf1.pdf"
+  },
+  {
+    "Name": "Catalogue 2",
+    "PdfUrl": "/PDFs/pdf2.pdf"
+  },
+  {
+    "Name": "Catalogue 3",
+    "PdfUrl": "/PDFs/pdf1.pdf"
+  }
+  // Add more catalogues as needed
+]
