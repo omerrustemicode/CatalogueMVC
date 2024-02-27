@@ -6,4 +6,4 @@ Install:
 How to Use
 1. Add PDF file to /wwwroot/PDFs
 2. Go to catalogueData.json and add Name of pdf and name of file
-Finish ..
+3.Enjoy ..
